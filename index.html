@@ -9,9 +9,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script></head>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel= "stylesheet" href= "style.css">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+jQuery(document).ready(function(){
+    jQuery('.skillbar').each(function(){               [
+        jQuery(this).find('.skillbar-bar').animate({
+            width:jquery(this).attr('data-percent')},4000);
+        });
+    });
+</script>
 <style>
 body {
   background-image: url("https://dev.xtentertainment.com/wp-content/uploads/2015/03/White-State_Website-Background.jpg");
@@ -82,27 +90,6 @@ background-size: contain;
     color: #c5c9d1;
 }
 
-
-.skills {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;  
-}
-
-.sub-skill{
-    text-align: center;
-    font-size: 20px;
-    padding-top:15px;
-}
-
-.html {width: 90%; background-color: #7881ed;}
-.css {width: 80%; background-color: #e871d6;}
-.js {width: 65%; background-color: #9a62d3;}
-.ruby {width: 60%; background-color: #6bb0e3;}
-.java {width: 70%; background-color: #6de5ad;}
-.node-js {width: 70%; background-color: #e5af36;}
-
 .contact {
     background-color: #fdf2fd;
     text-align: center;
@@ -120,8 +107,7 @@ background-size: contain;
              <div class="row">
                 <div class="col-md-6">
                         <div >
-                                <img src="https://www.wearefutureheads.com/wp-content/uploads/2019/04/Futureheads-Headshots-BNW-8-357x374.jpg"
-                                class="image">
+                                <img class = "image" src="picak/picture.jpg" alt= "this is me">
                             </div>
                 </div>
                 <div class="col-md-6 text">
@@ -220,42 +206,50 @@ background-size: contain;
 <!-- portfolio end -->
 
 <!-- skills -->
-<div class="main-skill">
-
-<div class="skill">Skills</div>
-<p class="sub-skill">HTML</p>
-<div class="container">
-  <div class="skills html">90%</div>
-</div>
-
-<p class="sub-skill">CSS</p>
-<div class="container">
-  <div class="skills css">80%</div>
-</div>
-
-<p class="sub-skill">JavaScript</p>
-<div class="container">
-  <div class="skills js">65%</div>
-</div>
-
-<p class="sub-skill">Ruby</p>
-<div class="container">
-  <div class="skills ruby">60%</div>
-</div>
+<div class="skill">Skills </div>
+ 
+    <div class="skillbar clearfix" data-percent="80%">
+     <div class="skillbar-title" style="background: #d35400"><span> HTML</span></div>
+     <div class="skillbar-bar" style="background: #e67e22;"></div>
+     <div class="skill-bar-percent">80%</div>
+        
+    </div>
     
-<p class="sub-skill">Java</p>
-<div class="container">
-  <div class="skills java">70%</div>
-</div>
-
-<p class="sub-skill">Node-js</p>
-<div class="container">
-  <div class="skills node-js">70%</div> 
-</div>
+    <div class="skillbar clearfix" data-percent="80%">
+     <div class="skillbar-title" style="background: #2980b9"><span> CSS </span></div>
+     <div class="skillbar-bar" style="background: #3498db;"></div>
+     <div class="skill-bar-percent">75%</div>
+        
+    </div>
     
-
-</div>
+    <div class="skillbar clearfix" data-percent="70%">
+     <div class="skillbar-title" style="background: #2c3e50"><span> JavaScript </span></div>
+     <div class="skillbar-bar" style="background: #2c3e50;"></div>
+     <div class="skill-bar-percent">75%</div>
+        
+    </div>
+    <div class="skillbar clearfix" data-percent="70%">
+     <div class="skillbar-title" style="background: #46465e"><span> Ruby </span></div>
+     <div class="skillbar-bar" style="background: #5a68a5;"></div>
+     <div class="skill-bar-percent">50%</div>
+        
+    </div>
             
+    <div class="skillbar clearfix" data-percent="70%">
+     <div class="skillbar-title" style="background: #333333"><span> Java </span></div>
+     <div class="skillbar-bar" style="background: #525252;"></div>
+     <div class="skill-bar-percent">75%</div>
+        
+    </div>
+    <div class="skillbar clearfix" data-percent="70%">
+     <div class="skillbar-title" style="background: #d35400"><span> node JS </span></div>
+     <div class="skillbar-bar" style="background: #e67e22;"></div>
+     <div class="skill-bar-percent">70%</div>
+        
+    </div>
+
+
+        
 <div class= "contact">
 
  <img src = "https://cdn.pixabay.com/photo/2016/06/13/17/30/mail-1454731_960_720.png" class= "icons" Akriti.karki@selu.edu>
